@@ -17,6 +17,7 @@ while not end_machine:
     elif choice == "report":
         resource.report()
         money.report()
+        
     elif choice == "restock":
         resource.restock_coffee()
 
