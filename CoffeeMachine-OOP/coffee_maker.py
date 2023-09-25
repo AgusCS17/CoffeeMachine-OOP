@@ -27,3 +27,11 @@ class CoffeeMaker:
         for item in order.ingredients:
             self.resources[item] -= order.ingredients[item]
         print(f"Here is your {order.name} ☕️. Enjoy!")
+        
+    def restock_coffee(self):
+        """Deducts the required ingredients from the resources."""
+        self.resources["water"] += int(input("How much water": ))
+        self.resources["milk"] += int(input("How much milk": ))
+        self.resources["coffee"] += int(input("How much coffee: "))
+        print(f"Your coffee machine has been restock!")
+
